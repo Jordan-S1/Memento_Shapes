@@ -1,4 +1,4 @@
-# MEMENTO SHAPES
+# Memento Shapes
 
 A console application that has different keyboard functionalities in a user interface to generate different types of shapes.
 
