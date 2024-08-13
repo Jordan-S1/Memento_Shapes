@@ -1,0 +1,5 @@
+<svg height="600" width="600" xmlns="http://www.w3.org/2000/svg">
+   <rect id="R2" x="275" y="275" width="123" height="107" stroke="black" stroke-width="5" fill="blue" />
+   <ellipse id="E33" cx="122" cy="122" rx="51" ry="13" stroke="black" stroke-width="5" fill="limegreen" />
+   <polyline id="PL23" points="61 127 65 143 70 123 76 104 81 245 87 132 90 155 95 248 103 175" stroke="orange" fill="transparent" stroke-width="5"/>
+</svg>

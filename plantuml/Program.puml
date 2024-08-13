@@ -1,0 +1,113 @@
+@startuml
+class Program {
+    {static} Main(args:string[]) : void
+    {static} Add(shape:string, canvas:Canvas) : void
+    {static} UI1() : string
+}
+class Canvas {
+    + Canvas()
+    + Canvas(other:Canvas)
+    + AddShape(c:Shape) : void
+    + ClearCanvas() : void
+    + DisplayCanvas() : void
+    + SaveCanvas() : void
+    + Undo(originator:Originator, caretaker:Caretaker) : void
+    + Redo(originator:Originator, caretaker:Caretaker) : void
+}
+abstract class Shape {
+    + ID : string <<get>> <<set>>
+    + {abstract} ToSVGElement() : string
+}
+class Circle {
+    + X : int <<get>> <<set>>
+    + Y : int <<get>> <<set>>
+    + R : int <<get>> <<set>>
+    + Circle()
+    + Circle(id:string, x:int, y:int, r:int)
+    + <<override>> ToString() : string
+    + <<override>> ToSVGElement() : string
+}
+class Rectangle {
+    + X : int <<get>> <<set>>
+    + Y : int <<get>> <<set>>
+    + W : int <<get>> <<set>>
+    + H : int <<get>> <<set>>
+    + Rectangle()
+    + Rectangle(id:string, x:int, y:int, w:int, h:int)
+    + <<override>> ToString() : string
+    + <<override>> ToSVGElement() : string
+}
+class Square {
+    + X : int <<get>> <<set>>
+    + Y : int <<get>> <<set>>
+    + L : int <<get>> <<set>>
+    + Square()
+    + Square(id:string, x:int, y:int, l:int)
+    + <<override>> ToString() : string
+    + <<override>> ToSVGElement() : string
+}
+class Polyline {
+    + Points : string <<get>> <<set>>
+    + Polyline()
+    + Polyline(id:string, points:string)
+    + <<override>> ToString() : string
+    + <<override>> ToSVGElement() : string
+}
+class Ellipse {
+    + X : int <<get>> <<set>>
+    + Y : int <<get>> <<set>>
+    + RX : int <<get>> <<set>>
+    + RY : int <<get>> <<set>>
+    + Ellipse()
+    + Ellipse(id:string, x:int, y:int, rx:int, ry:int)
+    + <<override>> ToString() : string
+    + <<override>> ToSVGElement() : string
+}
+class Polygon {
+    + Points : string <<get>> <<set>>
+    + Polygon()
+    + Polygon(id:string, points:string)
+    + <<override>> ToString() : string
+    + <<override>> ToSVGElement() : string
+}
+interface IMemento {
+    + getShape() : Shape
+    + setShape(state:Shape) : void
+}
+class Memento {
+    + getShape() : Shape
+    + setShape(a:Shape) : void
+}
+interface IOriginator {
+    + setState(state:Shape) : void
+    + getState() : Shape
+    + createMemento() : Memento
+    + setMemento(Memento:Memento) : void
+}
+class Originator {
+    + setState(state:Shape) : void
+    + getState() : Shape
+    + createMemento() : Memento
+    + setMemento(Memento:Memento) : void
+}
+interface ICaretaker {
+    + add(state:Memento) : void
+    + get(state:Memento) : Memento
+}
+class Caretaker {
+    + add(state:Memento) : void
+    + get(state:Memento) : Memento
+}
+class "List`1"<T> {
+}
+Canvas o-> "canvas<Shape>" "List`1"
+Shape <|-- Circle
+Shape <|-- Rectangle
+Shape <|-- Square
+Shape <|-- Polyline
+Shape <|-- Ellipse
+Shape <|-- Polygon
+IMemento <|-- Memento
+IOriginator <|-- Originator
+ICaretaker <|-- Caretaker
+@enduml

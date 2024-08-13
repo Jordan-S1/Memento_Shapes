@@ -1,0 +1,16 @@
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\bin\Debug\net5.0\MementoShapes.exe
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\bin\Debug\net5.0\MementoShapes.deps.json
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\bin\Debug\net5.0\MementoShapes.runtimeconfig.json
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\bin\Debug\net5.0\MementoShapes.runtimeconfig.dev.json
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\bin\Debug\net5.0\MementoShapes.dll
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\bin\Debug\net5.0\MementoShapes.pdb
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\obj\Debug\net5.0\MementoShapes.csproj.AssemblyReference.cache
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\obj\Debug\net5.0\MementoShapes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\obj\Debug\net5.0\MementoShapes.AssemblyInfoInputs.cache
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\obj\Debug\net5.0\MementoShapes.AssemblyInfo.cs
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\obj\Debug\net5.0\MementoShapes.csproj.CoreCompileInputs.cache
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\obj\Debug\net5.0\MementoShapes.dll
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\obj\Debug\net5.0\refint\MementoShapes.dll
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\obj\Debug\net5.0\MementoShapes.pdb
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\obj\Debug\net5.0\MementoShapes.genruntimeconfig.cache
+C:\Users\jorda\OneDrive\Documents\Memento_Shapes\obj\Debug\net5.0\ref\MementoShapes.dll
